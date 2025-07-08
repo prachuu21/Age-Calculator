@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: #b9000067;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container{
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px #ccc;
+            width: 90px;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2{
+            color: #0f1002;
+            padding: 50px;
+        }
+        input[type="date"]{
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #190707;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        button:hover{
+            background-color:  #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+        #result{
+            margin-top: 20px;
+            font-size: 50px;
+            color: #0e1142;
+        }
+    </style>
+<h2>Age Calculator</h2>
+<label for="dob" style="color: #090606; size: 80px; ">Enter Date of Birth:</label>
+<input type="date" id="dob">
+<button onclick="calculateAge()">Calculate Age</button>
+<p id="result"></p>
+<script src="calculate.js"></script>
+</body>
+</html>
